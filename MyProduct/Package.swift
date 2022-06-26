@@ -4,31 +4,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "IconsLibrary",
+    name: "MyProduct",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "IconsLibrary",
-            targets: ["IconsLibrary"]),
+            name: "MyProduct",
+            targets: ["MyProduct"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(path: "../StringGenPlugin")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "IconsLibrary",
+            name: "MyProduct",
             dependencies: [],
-            plugins: ["MediaConstants"]),
+            plugins: [
+                .plugin(name: "StringGenPlugin", package: "StringGenPlugin"),
+            ]),
         .testTarget(
-            name: "IconsLibraryTests",
-            dependencies: ["IconsLibrary"]),
-        .executableTarget(name: "MediaConstantsExecutable"),
-        .plugin(
-            name: "MediaConstants",
-            capability: .buildTool(),
-            dependencies: ["MediaConstantsExecutable"])
+            name: "MyProductTests",
+            dependencies: ["MyProduct"]),
     ]
 )

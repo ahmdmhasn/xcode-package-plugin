@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MyProduct">
+   </FileRef>
+   <FileRef
       location = "group:XcodePluginsDemo/../StringGenPlugin">
    </FileRef>
    <FileRef
