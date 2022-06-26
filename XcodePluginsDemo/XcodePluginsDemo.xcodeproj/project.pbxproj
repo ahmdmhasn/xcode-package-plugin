@@ -19,7 +19,6 @@
 		AA6F4BB328688034009FFD95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA6F4BB528688035009FFD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA6F4BB828688035009FFD95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AA6F4BBF28688204009FFD95 /* IconsLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = IconsLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,9 +35,9 @@
 		AA6F4BA528688034009FFD95 = {
 			isa = PBXGroup;
 			children = (
-				AA6F4BBF28688204009FFD95 /* IconsLibrary */,
 				AA6F4BB028688034009FFD95 /* XcodePluginsDemo */,
 				AA6F4BAF28688034009FFD95 /* Products */,
+				AA6F4BC12868B40F009FFD95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +68,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AA6F4BC12868B40F009FFD95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +91,8 @@
 			dependencies = (
 			);
 			name = XcodePluginsDemo;
+			packageProductDependencies = (
+			);
 			productName = XcodePluginsDemo;
 			productReference = AA6F4BAE28688034009FFD95 /* XcodePluginsDemo.app */;
 			productType = "com.apple.product-type.application";

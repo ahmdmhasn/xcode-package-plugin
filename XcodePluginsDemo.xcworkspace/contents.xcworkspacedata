@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:XcodePluginsDemo/../StringGenPlugin">
+   </FileRef>
+   <FileRef
+      location = "group:IconsLibrary">
+   </FileRef>
+   <FileRef
+      location = "group:XcodePluginsDemo/XcodePluginsDemo.xcodeproj">
+   </FileRef>
+</Workspace>
