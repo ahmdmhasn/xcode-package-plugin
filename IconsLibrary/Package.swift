@@ -14,6 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(path: "../StringGenPlugin")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -21,7 +22,10 @@ let package = Package(
         .target(
             name: "IconsLibrary",
             dependencies: [],
-            plugins: ["MediaConstants"]),
+            plugins: [
+                "MediaConstants",
+                .plugin(name: "StringGenPlugin", package: "StringGenPlugin"),
+            ]),
         .testTarget(
             name: "IconsLibraryTests",
             dependencies: ["IconsLibrary"]),

@@ -13,3 +13,5 @@ struct ContentView: View {
         Image.photoCamera
     }
 }
+
+let hello = NSLocalizedString("Hello, World!", bundle: .main, comment: "Some welcome message!")
