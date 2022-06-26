@@ -19,6 +19,7 @@
 		AA6F4BB328688034009FFD95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA6F4BB528688035009FFD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA6F4BB828688035009FFD95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA6F4BBF28688204009FFD95 /* IconsLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = IconsLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 		AA6F4BA528688034009FFD95 = {
 			isa = PBXGroup;
 			children = (
+				AA6F4BBF28688204009FFD95 /* IconsLibrary */,
 				AA6F4BB028688034009FFD95 /* XcodePluginsDemo */,
 				AA6F4BAF28688034009FFD95 /* Products */,
 			);
